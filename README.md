@@ -2,6 +2,15 @@
 
 A collection of example application site configs and snippets for running an NGINX server.
 
+## Folders
+
+- `conf.d/`  
+  Server-wide configuration files
+- `params/`  
+  Proxy parameters
+- `snippets/`  
+  Common code snippets to be included in other files
+
 ## How to use
 
 ### Download Diffie-Hellman parameter
