@@ -21,8 +21,7 @@ Use the follwoing command to download the Diffie-Hellman parameter for TLS 1.2:
 curl https://ssl-config.mozilla.org/ffdhe2048.txt > /etc/ssl/certs/dhparam.pem
 ```
 
-We use a common DH param per: https://github.com/mozilla/ssl-config-generator/issues/60#issuecomment-531522838
-
+We use a common DH param per: <https://github.com/mozilla/ssl-config-generator/issues/60#issuecomment-531522838>
 
 ### Install NGINX
 
@@ -64,4 +63,3 @@ sudo apt install -y nginx
 mkdir /etc/nginx/sites-available /etc/nginx/sites-enabled
 
 ```
-
