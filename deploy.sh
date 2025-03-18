@@ -1,9 +1,11 @@
 #!/bin/bash
 
 echo "Copying configuration files"
-cp -R conf.d/   /etc/nginx
-cp -R snippets/ /etc/nginx
-cp -R params/   /etc/nginx
+sudo cp -R conf.d/   /etc/nginx
+sudo cp -R snippets/ /etc/nginx
+sudo cp -R params/   /etc/nginx
 
-echo "Reloading nginx.service"
-systemctl reload nginx.service
+echo "Validating configuration"
+sudo nginx -t
+
+echo "You must reload nginx for the settings to take effect."
